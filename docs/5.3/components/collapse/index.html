@@ -5,20 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Toggle the visibility of content across your project with a few classes and our JavaScript plugins.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-<meta name="generator" content="Hugo 0.112.5">
+<meta name="generator" content="Hugo 0.115.4">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.3">
 
 <title>Collapse · Bootstrap v5.3</title>
 
-<link rel="canonical" href="https://getbootstrap.com/docs/5.3/components/collapse/"><link rel="preconnect" href="https://AK7KMZKZHQ-dsn.algolia.net" crossorigin>
+<link rel="canonical" href="https://getbootstrap.com/docs/5.3/components/collapse/">
+
+<link rel="preconnect" href="https://AK7KMZKZHQ-dsn.algolia.net" crossorigin>
 
 <script src="/docs/5.3/assets/js/color-modes.js"></script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-<link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
 <link href="/docs/5.3/assets/css/docs.css" rel="stylesheet">
 
@@ -67,7 +69,7 @@
   </div>
 </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
   <symbol id="arrow-right" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
   </symbol>
@@ -167,9 +169,7 @@
     </a>
 
     <div class="d-flex">
-      
-        <div class="bd-search" id="docsearch" data-bd-docs-version="5.3"></div>
-      
+      <div class="bd-search" id="docsearch" data-bd-docs-version="5.3"></div>
 
       <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
         <svg class="bi" aria-hidden="true"><use xlink:href="#three-dots"></use></svg>
@@ -531,7 +531,7 @@
     <main class="bd-main order-1">
       <div class="bd-intro pt-2 ps-lg-2">
         <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
-          <div class="mb-3 mb-md-0 d-flex text-nowrap"><a class="btn btn-sm btn-bd-light rounded-2" href="https://github.com/twbs/bootstrap/blob/v5.3.0/site/content/docs/5.3/components/collapse.md" title="View and edit this file on GitHub" target="_blank" rel="noopener">
+          <div class="mb-3 mb-md-0 d-flex text-nowrap"><a class="btn btn-sm btn-bd-light rounded-2" href="https://github.com/twbs/bootstrap/blob/v5.3.1/site/content/docs/5.3/components/collapse.md" title="View and edit this file on GitHub" target="_blank" rel="noopener">
               View on GitHub
             </a>
           </div>
@@ -597,7 +597,7 @@ The animation effect of this component is dependent on the <code>prefers-reduced
 </ul>
 <p>Generally, we recommend using a <code>&lt;button&gt;</code> with the <code>data-bs-target</code> attribute. While not recommended from a semantic point of view, you can also use an <code>&lt;a&gt;</code> link with the <code>href</code> attribute (and a <code>role=&quot;button&quot;</code>). In both cases, the <code>data-bs-toggle=&quot;collapse&quot;</code> is required.</p>
 <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
-<p>
+<p class="d-inline-flex gap-1">
   <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     Link with href
   </a>
@@ -620,7 +620,7 @@ The animation effect of this component is dependent on the <code>prefers-reduced
             <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
           </button>
         </div>
-      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-inline-flex gap-1&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#collapseExample&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseExample&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    Link with href
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
@@ -680,7 +680,7 @@ Please note that while the example below has a <code>min-height</code> set to av
 <p>A <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> element can show and hide multiple elements by referencing them with a selector in its <code>data-bs-target</code> or <code>href</code> attribute.
 Conversely, multiple <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> elements can show and hide the same element if they each reference it with their <code>data-bs-target</code> or <code>href</code> attribute.</p>
 <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
-<p>
+<p class="d-inline-flex gap-1">
   <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
@@ -711,7 +711,7 @@ Conversely, multiple <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> eleme
             <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
           </button>
         </div>
-      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-inline-flex gap-1&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#multiCollapseExample1&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;multiCollapseExample1&#34;</span><span class="p">&gt;</span>Toggle first element<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#multiCollapseExample2&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;multiCollapseExample2&#34;</span><span class="p">&gt;</span>Toggle second element<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;.multi-collapse&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;multiCollapseExample1 multiCollapseExample2&#34;</span><span class="p">&gt;</span>Toggle both elements<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
@@ -741,7 +741,7 @@ Conversely, multiple <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> eleme
 <h3 id="sass-variables">Sass variables <a class="anchor-link" href="#sass-variables" aria-label="Link to this section: Sass variables"></a></h3>
 <div class="bd-example-snippet bd-code-snippet bd-file-ref">
     <div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-bottom">
-      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small" href="https://github.com/twbs/bootstrap/blob/v5.3.0/scss/_variables.scss">scss/_variables.scss</a>
+      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small" href="https://github.com/twbs/bootstrap/blob/v5.3.1/scss/_variables.scss">scss/_variables.scss</a>
       <div class="d-flex ms-auto">
         <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
           <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
@@ -754,7 +754,7 @@ Conversely, multiple <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> eleme
 <p>Collapse transition classes can be found in <code>scss/_transitions.scss</code> as these are shared across multiple components (collapse and accordion).</p>
 <div class="bd-example-snippet bd-code-snippet bd-file-ref">
     <div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-bottom">
-      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small" href="https://github.com/twbs/bootstrap/blob/v5.3.0/scss/_transitions.scss">scss/_transitions.scss</a>
+      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small" href="https://github.com/twbs/bootstrap/blob/v5.3.1/scss/_transitions.scss">scss/_transitions.scss</a>
       <div class="d-flex ms-auto">
         <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
           <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
@@ -918,7 +918,7 @@ Conversely, multiple <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> eleme
         <ul class="list-unstyled small">
           <li class="mb-2">Designed and built with all the love in the world by the <a href="/docs/5.3/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
           <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
-          <li class="mb-2">Currently v5.3.0.</li>
+          <li class="mb-2">Currently v5.3.1.</li>
         </ul>
       </div>
       <div class="col-6 col-lg-2 offset-lg-1 mb-3">
@@ -930,7 +930,7 @@ Conversely, multiple <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> eleme
           <li class="mb-2"><a href="https://icons.getbootstrap.com/">Icons</a></li>
           <li class="mb-2"><a href="https://themes.getbootstrap.com/">Themes</a></li>
           <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
-          <li class="mb-2"><a href="https://cottonbureau.com/people/bootstrap">Swag Store</a></li>
+          <li class="mb-2"><a href="https://cottonbureau.com/people/bootstrap" target="_blank" rel="noopener">Swag Store</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-2 mb-3">
@@ -946,35 +946,35 @@ Conversely, multiple <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> eleme
       <div class="col-6 col-lg-2 mb-3">
         <h5>Projects</h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/examples/">Examples repo</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap" target="_blank" rel="noopener">Bootstrap 5</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev" target="_blank" rel="noopener">Bootstrap 4</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/icons" target="_blank" rel="noopener">Icons</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/rfs" target="_blank" rel="noopener">RFS</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/examples/" target="_blank" rel="noopener">Examples repo</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-2 mb-3">
         <h5>Community</h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a></li>
-          <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
-          <li class="mb-2"><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
-          <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues" target="_blank" rel="noopener">Issues</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions" target="_blank" rel="noopener">Discussions</a></li>
+          <li class="mb-2"><a href="https://github.com/sponsors/twbs" target="_blank" rel="noopener">Corporate sponsors</a></li>
+          <li class="mb-2"><a href="https://opencollective.com/bootstrap" target="_blank" rel="noopener">Open Collective</a></li>
+          <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5" target="_blank" rel="noopener">Stack Overflow</a></li>
         </ul>
       </div>
     </div>
   </div>
 </footer>
 
-    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/@stackblitz/sdk@1/bundles/sdk.umd.js"></script>
 
 <script src="/docs/5.3/assets/js/docs.min.js"></script>
-
 
 
 
